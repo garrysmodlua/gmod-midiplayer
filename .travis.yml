@@ -1,0 +1,26 @@
+dist: trusty
+sudo: false
+language: c
+
+branches:
+  only:
+    - master
+
+addons:
+  apt:
+    packages:
+    - libc6:i386
+    - libstdc++6:i386
+
+before_install:
+  # Download gluac v20151107
+  - wget https://github.com/garrysmodlua/gtravis/releases/download/v20151107/gluac.tar.xz
+  - tar -xf gluac.tar.xz
+  - export LD_LIBRARY_PATH=`pwd`/gluac${LD_LIBRARY_PATH:+:}${LD_LIBRARY_PATH:-}
+
+  # Set $PATH environment variable in order to execute gluac
+  - export PATH=$PATH:`pwd`/gluac
+
+  - echo $PWD
+
+script: find lua/ -iname '*.lua' -print0 | xargs -0 -- gluac -p --
