@@ -1,6 +1,6 @@
 # Garry's Mod MIDI Player
 
-[![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-417a9b.svg?colorA=232836&maxAge=60)](https://steamcommunity.com/sharedfiles/filedetails/?id=935799359) [![Travis Build Status](https://img.shields.io/travis/garrysmodlua/gmod-midiplayer/master.svg?style=flat-square&maxAge=30)](https://travis-ci.org/garrysmodlua/gmod-midiplayer)
+[![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-417a9b.svg?style=flat-square&colorA=555555&maxAge=60)](https://steamcommunity.com/sharedfiles/filedetails/?id=935799359) [![Travis Build Status](https://img.shields.io/travis/garrysmodlua/gmod-midiplayer/master.svg?style=flat-square&maxAge=30)](https://travis-ci.org/garrysmodlua/gmod-midiplayer)
 
 This is a MIDI player for Garry's Mod.
 
